@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "out" # The directory where static files are exported
+  functions = "netlify/functions" # Location for serverless functions
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
